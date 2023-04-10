@@ -15,7 +15,7 @@ ul{
 #APOD{
     width:100vw;
 }
-img{
+#APOD img{
     /* object-fit: cover; */
     width: 95vw;
     
@@ -26,16 +26,16 @@ img{
 }
 
 article{
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
     align-items: center;
-   
+    */
 }
 #asteroid-profile{
-    display:flex;
+    /* display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:flex-start;
+    align-items:flex-start; */
     
 }
 
@@ -46,13 +46,29 @@ article{
 }
 
 #asteroid{
-    width: 400px;
+    width: 45vw;
     margin-bottom: 20px;
 }
 
 #text-area{
     border: 1px solid grey;
     height: 16rem;
-  
-
 }
+@media screen and (max-width: 576px) {
+    #asteroid{
+        width: 45vw;
+    }
+    #text-area{
+        border: 1px solid grey;
+        height: 25rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #asteroid{
+        width: 45vw;
+    }
+    #text-area{
+        border: 1px solid grey;
+        height: 25rem;
+    }
+  }
