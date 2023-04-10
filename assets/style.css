@@ -13,15 +13,16 @@ ul{
 }
 
 #APOD{
-    /* display:flex;
-    justify-content: center;
-    flex-direction: column; */
     width:100vw;
 }
 img{
     /* object-fit: cover; */
     width: 95vw;
     
+}
+#APOD-Search{
+    padding:2px;
+    margin:10px;
 }
 
 article{
