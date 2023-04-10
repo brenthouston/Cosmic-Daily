@@ -59,18 +59,6 @@ img {
   margin: 10px;
 }
 
-article {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-#asteroid-profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
 #asteroid-name {
   font-size: 2rem;
   line-height: 2rem;
@@ -95,6 +83,9 @@ article {
 #text-area{
     border: 1px solid grey;
     height: 16rem;
+}
+#asteroid-search{
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 576px) {
     #asteroid{

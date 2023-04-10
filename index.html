@@ -37,7 +37,7 @@
             </section>
       </section>
       <article class="row">
-        <div id="asteroid-profile" class="col s6">
+        <div id="asteroid-profile" class="col l6 s12">
           <h2 id="asteroid-name">EROS</h2>
           <img
             id="asteroid"
@@ -45,7 +45,14 @@
             alt="pic of asteroid"
           />
         </div>
-        <div id="asteroid-layout-rightside" class="col s6">
+        <div id = 'asteroid-search' class = 'col l6 s6  '>
+            <form action="submit">
+              <label for="">Asteroid search</label>
+              <input type="text" id="asteroid-search" name="asteroid-search" placeholder=" Name your asteroid"/>
+              <button class = 'waves-effect waves-light btn grey darken-2' type="submit" id="search">Search</button>
+            </form>
+    </div>
+        <div id="asteroid-layout-rightside" class="col l6 s12">
           <div id="text-area">
             <ul>
               <li>Orbiting body:</li>
@@ -55,18 +62,6 @@
               <li>Velocity:</li>
             </ul>
           </div>
-        </div>
-            <div class = 'col s6 offset-s6'>
-                <form action="submit">
-                  <label for="">Asteroid search</label>
-                  <input
-                    type="text"
-                    id="asteroid-search"
-                    name="asteroid-search"
-                    placeholder=" Name your asteroid"
-                  />
-                  <button type="submit" id="search">Search</button>
-                </form>
         </div>
         </div>
       </article>
