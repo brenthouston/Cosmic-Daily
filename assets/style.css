@@ -16,6 +16,32 @@ header{
 body{
     background-color: var(--primary);
 }
+#APOD{
+    width:100vw;
+}
+#APOD img{
+    /* object-fit: cover; */
+    width: 95vw;
+    
+}
+#APOD-Search{
+    padding:2px;
+    margin:10px;
+}
+
+article{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    */
+}
+#asteroid-profile{
+    /* display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start; */
+    
+}
 
 h1{
     font-family: "belarius-poster", sans-serif;
@@ -26,8 +52,8 @@ h1{
 }
 
 h2 {
-    color:#9b9fb8
-    margin: 0;
+    color:#9b9fb8;
+    margin: 0px;
 }
 
 ul {
@@ -75,3 +101,30 @@ article {
   height: 16rem;
   box-shadow: 0px 0px 10px -5px;
 }
+#asteroid{
+    width: 45vw;
+    margin-bottom: 20px;
+}
+
+#text-area{
+    border: 1px solid grey;
+    height: 16rem;
+}
+@media screen and (max-width: 576px) {
+    #asteroid{
+        width: 45vw;
+    }
+    #text-area{
+        border: 1px solid grey;
+        height: 25rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #asteroid{
+        width: 45vw;
+    }
+    #text-area{
+        border: 1px solid grey;
+        height: 25rem;
+    }
+  }

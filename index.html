@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmic Daily</title>
     <link rel="stylesheet" href="https://use.typekit.net/bfj3agg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="center-align">Cosmic Daily</h1>
+      <h1 class="center-align">Cosmic Daily</h1>
     </header>
     <main>
         <section class = 'row'>
@@ -28,32 +35,86 @@
                       <div class="collapsible-body 5"><span id='APOD-Desc'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eligendi dolor, hic voluptatibus reiciendis temporibus quia molestias tempore iure assumenda dolorem error optio eum odit nobis iste omnis id magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid vel sed! Quis tenetur maxime quasi doloribus accusamus aliquam sed ut, libero dolorem repellendus quisquam nihil minima! Rerum, inventore nesciunt!</span></div>
                   </ul>        
             </section>
+      <section class="row">
+        <form action="submit" class="col s4 offset-s8 right-align">
+          <label for=""
+            >Choose a date to see NASA's image of the day for that day.</label
+          >
+          <input
+            type="text"
+            id="date-search"
+            class="right-align datepicker"
+            name="date-search"
+            placeholder=" Enter your date here"
+          />
+          <button
+            class="waves-effect waves-light btn grey darken-2"
+            type="submit"
+            id="APOD-Search"
+          >
+            Search
+          </button>
+        </form>
+        <section class="col center-align blue-grey" id="APOD">
+          <img src="https://apod.nasa.gov/apod/image/2304/ChickenRun_Stern_9006.jpg" alt=""/>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header grey darken-1 white-text">
+                Picture of the day info!
+              </div>
+              <div class="collapsible-body grey lighten-5">
+                <span id="APOD-Desc"
+                  >Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Officiis eligendi dolor, hic
+                  voluptatibus reiciendis temporibus quia molestias tempore iure
+                  assumenda dolorem error optio eum odit nobis iste omnis id
+                  magnam? Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Necessitatibus aliquid vel sed! Quis tenetur maxime
+                  quasi doloribus accusamus aliquam sed ut, libero dolorem
+                  repellendus quisquam nihil minima! Rerum, inventore
+                  nesciunt!</span
+                >
+              </div>
+            </li>
+          </ul>
         </section>
-        <article class="row">
-            <div id="asteroid-profile" class="col s4">
-                <h2 id="asteroid-name">EROS</h2>
-                <img id="asteroid" src="assets/images/Eros.jpg" alt="pic of asteroid">
-            </div>
-            <div id="asteroid-layout-rightside"class="col s8">
-            <div id="text-area" >
-                <ul>
-                    <li>Orbiting body:</li>
-                    <li>Estimated diameter:</li>
-                    <li>Miss distance:</li>
-                    <li>Close approach date:</li>
-                    <li>Velocity:</li>
-                </ul>
-            </div>
-        
+      </section>
+      <article class="row">
+        <div id="asteroid-profile" class="col s6">
+          <h2 id="asteroid-name">EROS</h2>
+          <img
+            id="asteroid"
+            src="assets/images/Eros.jpg"
+            alt="pic of asteroid"
+          />
+        </div>
+        <div id="asteroid-layout-rightside" class="col s6">
+          <div id="text-area">
+            <ul>
+              <li>Orbiting body:</li>
+              <li>Estimated diameter:</li>
+              <li>Miss distance:</li>
+              <li>Close approach date:</li>
+              <li>Velocity:</li>
+            </ul>
+          </div>
+        </div>
+            <div class = 'col s6 offset-s6'>
                 <form action="submit">
-                    <label for="">Asteroid search</label>
-                    <input type="text" id="asteroid-search" name="asteroid-search" placeholder=" Name your asteroid" >
-                    <button type="submit" id="search">Search</button>
+                  <label for="">Asteroid search</label>
+                  <input
+                    type="text"
+                    id="asteroid-search"
+                    name="asteroid-search"
+                    placeholder=" Name your asteroid"
+                  />
+                  <button type="submit" id="search">Search</button>
                 </form>
-            </div>
-        </article>
+        </div>
+        </div>
+      </article>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
