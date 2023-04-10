@@ -1,3 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+h2{
+    margin:0;
+}
+
+ul{
+    margin: 20px;
+    line-height: 2rem;
+}
+
 #APOD{
     /* display:flex;
     justify-content: center;
@@ -8,4 +22,36 @@ img{
     /* object-fit: cover; */
     width: 95vw;
     
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+#asteroid-profile{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    
+}
+
+#asteroid-name{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+#asteroid{
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#text-area{
+    border: 1px solid grey;
+    height: 16rem;
+  
+
 }
