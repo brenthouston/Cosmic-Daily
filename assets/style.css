@@ -29,20 +29,6 @@ body{
     margin:10px;
 }
 
-article{
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    */
-}
-#asteroid-profile{
-    /* display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:flex-start; */
-    
-}
-
 h1{
     font-family: "belarius-poster", sans-serif;
     font-weight: 700;
