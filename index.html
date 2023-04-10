@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmic Daily</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bfj3agg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -16,6 +21,20 @@
       <h1 class="center-align">Cosmic Daily</h1>
     </header>
     <main>
+        <section class = 'row'>
+            <form action="submit" class=" col s4 offset-s8 right-align">
+                <label for="">Choose a date to see NASA's image of the day for that day.</label>
+                <input type="text" id="date-search"  class="right-align datepicker" name="date-search" placeholder=" Enter your date here" >
+                <button class="waves-effect waves-light btn grey darken-2" type="submit" id="APOD-Search">Search</button>
+            </form>
+            <section class = 'col center-align' id="APOD">
+                <img src="https://apod.nasa.gov/apod/image/2304/ChickenRun_Stern_9006.jpg" alt="">
+                <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header  grey lighten-4 black-text">Picture of the day info!</div>
+                      <div class="collapsible-body 5"><span id='APOD-Desc'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eligendi dolor, hic voluptatibus reiciendis temporibus quia molestias tempore iure assumenda dolorem error optio eum odit nobis iste omnis id magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid vel sed! Quis tenetur maxime quasi doloribus accusamus aliquam sed ut, libero dolorem repellendus quisquam nihil minima! Rerum, inventore nesciunt!</span></div>
+                  </ul>        
+            </section>
       <section class="row">
         <form action="submit" class="col s4 offset-s8 right-align">
           <label for=""
