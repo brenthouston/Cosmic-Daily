@@ -14,12 +14,11 @@
     />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <body>
+  <body class="">
     <header>
       <h1 class="center-align">Cosmic Daily</h1>
     </header>
     <main>
-<<<<<<< HEAD
         <section class = 'row'>
             <div class=" col s4 offset-s8 right-align">
                 <label for="">Choose a date to see NASA's image of the day for that day.</label>
@@ -27,25 +26,19 @@
                 <button class="waves-effect waves-light btn grey darken-2" type="submit" id="APOD-Search">Search</button>
             </div>
             <section class = 'col center-align' id="APOD">
-=======
-        <section class = 'row center'>
-            <form action="submit" class=" col s4 offset-s8 right-align">
-                <label for="">Choose a date to see NASA's image of the day for that day.</label>
-                <input type="text" id="date-search"  class="right-align datepicker" name="date-search" placeholder=" Enter your date here" >
-                <button class="waves-effect waves-light btn grey darken-2" type="submit" id="APOD-Search">Search</button>
-            </form>
-            <section id="APOD">
->>>>>>> dev
-                <img src="" alt="">
-                <ul class=" col s3 offset-s1 collapsible ">
-                    <li>
+                <img class="hero" src="" alt="NASA picture of the day">
+                                                  <!-- Collapsible description box -->
+                <ul id="pic-info" class="collapsible col3 offset-s1">
+                    <li >
                       <div class="collapsible-header n/a transparent white-text">Picture of the day info!</div>
                       <div class="collapsible-body 5"><span id='APOD-Desc'></span></div>
                     </li>
                 </ul>        
             </section>
       </section>
-      <article class="row">
+                                                        <!-- Asteroid section -->
+      <article id="asteriod-section" class="row">
+                                                        <!-- Photo of asteroid -->
         <div id="asteroid-profile" class="col l6 s12">
           <h2 id="asteroid-name">EROS</h2>
           <img
@@ -54,13 +47,15 @@
             alt="pic of asteroid"
           />
         </div>
-        <div id = 'asteroid-search' class = 'col l6 s6  '>
+                                                        <!-- Asteroid Search -->
+        <div id = 'asteroid-search' class = 'col l6 s6'>
             <form action="submit">
               <label for="">Asteroid search</label>
               <input type="text" id="asteroid-search" name="asteroid-search" placeholder=" Name your asteroid"/>
               <button class = 'waves-effect waves-light btn grey darken-2' type="submit" id="search">Search</button>
             </form>
-    </div>
+        </div>
+                                                        <!-- Asteroid STATS -->
         <div id="asteroid-layout-rightside" class="col l6 s12">
           <div id="text-area">
 <<<<<<< HEAD
