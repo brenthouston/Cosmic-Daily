@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  margin-block-start:0;
+  margin-block-end:0;
+  padding-inline-start:0;
 }
 
 :root{
@@ -14,13 +17,20 @@ body{
     background-image: linear-gradient(to top, #c3c6ca, #8e8c9c, #61596c, #383042, #05161b);
 }
 #APOD{
-    width:100vw;
+    max-width: 100vw;
 }
 #APOD img{
     /* object-fit: cover; */
     width: 95vw;
     
 }
+#APOD ul{
+  /* object-fit: cover; */
+  width: 70vw;
+  /* margin: 30px 30px 30px 30px; */
+  
+}
+#APO
 #APOD-Search{
     padding:2px;
     margin:10px;
@@ -43,7 +53,7 @@ h2 {
     margin: 0px;
 }
 
-ul {
+#stats ul {
   margin: 20px;
   line-height: 2rem;
 }
