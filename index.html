@@ -20,11 +20,11 @@
     </header>
     <main>
         <section class = 'row'>
-            <form action="submit" class=" col s4 offset-s8 right-align">
+            <div class=" col s4 offset-s8 right-align">
                 <label for="">Choose a date to see NASA's image of the day for that day.</label>
                 <input type="text" id="date-search"  class="right-align datepicker" name="date-search" placeholder=" Enter your date here" >
                 <button class="waves-effect waves-light btn grey darken-2" type="submit" id="APOD-Search">Search</button>
-            </form>
+            </div>
             <section class = 'col center-align' id="APOD">
                 <img src="" alt="">
                 <ul class="collapsible">
@@ -53,17 +53,23 @@
         <div id="asteroid-layout-rightside" class="col l6 s12">
           <div id="text-area">
             <ul>
-              <li>Orbiting body:</li>
-              <li>Estimated diameter:</li>
-              <li>Miss distance:</li>
-              <li>Close approach date:</li>
-              <li>Velocity:</li>
+              <li id = "orbit">Orbiting body:</li>
+              <li id = "diam">Estimated diameter:</li>
+              <li id = "miss">Miss distance:</li>
+              <li id = "close">Close approach date:</li>
+              <li id = "speed">Velocity:</li>
             </ul>
           </div>
         </div>
         </div>
       </article>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/script.js"></script>
   </body>
