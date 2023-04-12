@@ -6,12 +6,13 @@ var instance = M.Collapsible.init(elem, {
 var startDate = dayjs().format("YYYY-MM-DD");
 var asteroidDate = dayjs().format("YYYY-MM-DD");
 var i = 0;
+
 // var asteroids = []
-
-
-
 var datePicker = document.querySelector('.datepicker');
-M.Datepicker.init(datePicker, {});
+M.Datepicker.init(datePicker, {
+  minDate: new Date(1995,5,20), 
+  maxDate: new Date()
+});
 var datePicker2 = document.querySelector('#asteroid-date-search');
 M.Datepicker.init(datePicker2, {});
 var nextBtn = document.getElementById("next");
