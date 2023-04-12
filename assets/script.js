@@ -47,13 +47,14 @@ fetch(asteroidUrl)
       var maxDiameter = diam.estimated_diameter_max;
       var minDiameter = diam.estimated_diameter_min;
       document.getElementById("orbit").textContent = "Orbiting Body: " +orbitData;
-      document.getElementById("diam").textContent = "Estimated Diameter Range: " + minDiameter +" to " + maxDiameter + " Feet";
+      document.getElementById("diam").textContent = "Estimated Diameter Range: " + Math.round(minDiameter) +" to " + Math.round(maxDiameter) + " Feet";
       var missDistance = approachData["0"].miss_distance.miles;
-      document.getElementById("miss").textContent = "Miss Distance: " + missDistance + " Miles";
+      document.getElementById("miss").textContent = "Miss Distance: " + Math.round(missDistance) + " Miles";
       var closeDate = approachData["0"].close_approach_date_full;
       document.getElementById("close").textContent = "Closest Approach Date and Time: " + closeDate;
       var speed = approachData["0"].relative_velocity.miles_per_hour;
-      document.getElementById("speed").textContent = "Velocity: " + speed + " Miles Per Hour";
+      dayjs(speed).format("MMMM dddd, YYYY hh:mm: a");
+      document.getElementById("speed").textContent = "Velocity: " + Math.round(speed) + " Miles Per Hour";
       var nameAsteroid = asteroidIndex.name;
       document.getElementById("asteroid-name").textContent = nameAsteroid;
     })
