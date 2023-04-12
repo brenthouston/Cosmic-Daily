@@ -6,6 +6,10 @@ var startDate = dayjs().format("YYYY-MM-DD");
 
   var datePicker = document.querySelector('.datepicker');
    M.Datepicker.init(datePicker, {});
+   var datePicker2 = document.querySelector('#asteroid-date-search');
+   M.Datepicker.init(datePicker2, {});
+
+
    var myBtn = document.getElementById("APOD-Search");
    myBtn.addEventListener("click", function(){
     var userDate = datePicker.value;
