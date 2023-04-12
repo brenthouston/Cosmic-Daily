@@ -5,11 +5,85 @@ var instance = M.Collapsible.init(elem, {
 });
 var startDate = dayjs().format("YYYY-MM-DD");
 var asteroidDate = dayjs().format("YYYY-MM-DD");
+var i = 0;
+
 
   var datePicker = document.querySelector('.datepicker');
    M.Datepicker.init(datePicker, {});
    var datePicker2 = document.querySelector('#asteroid-date-search');
    M.Datepicker.init(datePicker2, {});
+   var nextBtn = document.getElementById("next");
+   var prevBtn = document.getElementById("prev");
+   nextBtn.addEventListener("click", function(){
+    var asteroidUrl = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+startDate+"&end_date="+startDate+"&api_key=wgpRXAaMzhMljw8IdBCicL4wTtHKvjyaGzDIe7a5";
+    fetch(asteroidUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      if(i<data.element_count){
+      i++}
+      else{
+      i=0;
+      }
+      {
+      var asteroids = data.near_earth_objects;
+      var asteroidIndex = asteroids[startDate][i];
+      var approachData = asteroidIndex.close_approach_data;
+      var orbitData = approachData["0"].orbiting_body;
+      var diamData = asteroids[startDate][i].estimated_diameter;
+      var diam = diamData.feet;
+      var maxDiameter = diam.estimated_diameter_max;
+      var minDiameter = diam.estimated_diameter_min;
+      document.getElementById("orbit").textContent = "Orbiting Body: " +orbitData;
+      document.getElementById("diam").textContent = "Estimated Diameter Range: " + Math.round(minDiameter) +" to " + Math.round(maxDiameter) + " Feet";
+      var missDistance = approachData["0"].miss_distance.miles;
+      document.getElementById("miss").textContent = "Miss Distance: " + Math.round(missDistance) + " Miles";
+      var closeDate = approachData["0"].close_approach_date_full;
+      document.getElementById("close").textContent = "Closest Approach Date and Time: " + dayjs(closeDate).format("MMMM DD, YYYY hh:mm a");
+      var speed = approachData["0"].relative_velocity.miles_per_hour;
+      document.getElementById("speed").textContent = "Velocity: " + Math.round(speed) + " Miles Per Hour";
+      var nameAsteroid = asteroidIndex.name;
+      document.getElementById("asteroid-name").textContent = nameAsteroid;
+      }
+      randomPhoto();
+    })
+  })
+   prevBtn.addEventListener("click", function(){
+    var asteroidUrl = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+startDate+"&end_date="+startDate+"&api_key=wgpRXAaMzhMljw8IdBCicL4wTtHKvjyaGzDIe7a5";
+    fetch(asteroidUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      if(i>0){
+      i--}
+      else{
+      i=data.element_count -1;
+      }
+      {
+      var asteroids = data.near_earth_objects;
+      var asteroidIndex = asteroids[startDate][i];
+      var approachData = asteroidIndex.close_approach_data;
+      var orbitData = approachData["0"].orbiting_body;
+      var diamData = asteroids[startDate][i].estimated_diameter;
+      var diam = diamData.feet;
+      var maxDiameter = diam.estimated_diameter_max;
+      var minDiameter = diam.estimated_diameter_min;
+      document.getElementById("orbit").textContent = "Orbiting Body: " +orbitData;
+      document.getElementById("diam").textContent = "Estimated Diameter Range: " + Math.round(minDiameter) +" to " + Math.round(maxDiameter) + " Feet";
+      var missDistance = approachData["0"].miss_distance.miles;
+      document.getElementById("miss").textContent = "Miss Distance: " + Math.round(missDistance) + " Miles";
+      var closeDate = approachData["0"].close_approach_date_full;
+      document.getElementById("close").textContent = "Closest Approach Date and Time: " + dayjs(closeDate).format("MMMM dddd, YYYY hh:mm a");
+      var speed = approachData["0"].relative_velocity.miles_per_hour;
+      document.getElementById("speed").textContent = "Velocity: " + Math.round(speed) + " Miles Per Hour";
+      var nameAsteroid = asteroidIndex.name;
+      document.getElementById("asteroid-name").textContent = nameAsteroid;
+      }
+      randomPhoto();
+    })
+  })
    var myBtn = document.getElementById("APOD-Search");
    var myBtn2 = document.getElementById("Asteroid-Search");
    myBtn2.addEventListener("click",function(){
@@ -103,8 +177,9 @@ fetch(asteroidUrl)
 
 
     function randomPhoto(){
-      ranNum = Math.floor(Math.random() * 10)
+      ranNum = Math.floor(Math.random() * 9)+1;
       console.log(ranNum)
       asteroidPhoto.src = 'assets/images/asteroid-'+ranNum+'.png'
     }
     randomPhoto()
+    
