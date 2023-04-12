@@ -9,6 +9,12 @@
 
 
 
+html {
+    overflow-y: overlay;
+}
+
+
+
 body{
     
     background-image: linear-gradient(to top, #c3c6ca, #8e8c9c, #61596c, #383042, #05161b);
@@ -78,9 +84,13 @@ background: -webkit-linear-gradient(#807c8e,#eeeef0bd);
 #asteroidSub{
     color: #eeeef0bd;
     text-align: center;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
+#statistics{
+    margin: 30px;
+    line-height: 2.25rem;
+}
 
 
 #asteroid-section{
@@ -89,7 +99,7 @@ background: -webkit-linear-gradient(#807c8e,#eeeef0bd);
 }
 
 #nasa-search{
-margin-right: 4vw;
+margin-right: 5vw;
 }
 
 
@@ -103,7 +113,9 @@ margin-right: 4vw;
 
 #pic-info{
     position: relative;
-    left: .75vw;
+    left: 10.5vw;
+    font-size: 20px;
+   
 }
 #asteroid-name {
   color:rgb(0, 0, 0);
@@ -129,12 +141,12 @@ margin-right: 4vw;
 #text-area{
     border: 1px solid grey;
     height: 16rem;
-    margin-right: 3vw;
+    margin-right: 4vw;
    
 }
 
 #asteroidDiv{
-    margin-right: 3vw;
+    margin-right: 4vw;
 }
 
 #asteroid-search{
