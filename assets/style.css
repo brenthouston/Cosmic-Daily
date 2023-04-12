@@ -179,3 +179,25 @@ margin-right: 5vw;
         height: 25rem;
     }
   }
+
+    /* datepicker color*/
+    .datepicker-date-display,
+    .datepicker-cancel,
+    .datepicker-clear,
+    .datepicker-done,
+    .datepicker-table td.is-selected > span,
+    .datepicker-table td.is-today > span,
+    .datepicker-table td.is-selected > span:hover,
+    .datepicker-table td.is-today > span:hover {
+      background-color: rgba(52, 24, 62, 0.806) !important;
+    }
+    
+    /* datepicker text */
+    .datepicker-table td.is-selected > span,
+    .datepicker-table td.is-today > span {
+      color: white !important;
+    }
+    /* datepicker button color */
+    .datepicker-cancel, .datepicker-done {
+        color: rgb(232, 228, 228) !important;
+      }
