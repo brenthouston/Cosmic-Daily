@@ -20,7 +20,6 @@ var prevBtn = document.getElementById("prev");
 nextBtn.addEventListener("click", function () {
   // i++
   // renderAsteroid()
-  asteroidDate = datePicker2.value;
   var formatAsteroid = dayjs(asteroidDate).format("YYYY-MM-DD");
   var asteroidUrl = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + formatAsteroid + "&end_date=" + formatAsteroid + "&api_key=wgpRXAaMzhMljw8IdBCicL4wTtHKvjyaGzDIe7a5";
   fetch(asteroidUrl)
