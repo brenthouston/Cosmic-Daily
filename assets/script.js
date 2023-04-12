@@ -1,4 +1,5 @@
 var elem = document.querySelector('.collapsible');
+var asteroidPhoto = document.querySelector('#asteroid')
 var instance = M.Collapsible.init(elem, {
   accordion: false
 });
