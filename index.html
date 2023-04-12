@@ -21,17 +21,19 @@
     </header>
     <main>
         <section class = 'row'>
-            <div class=" col s4 offset-s8 right-align">
+                                                <!-- NASA pic of the day datepicker -->
+            <div id="nasa-search" class=" col offset-s8 right-align">
                 <label for="">Choose a date to see NASA's image of the day for that day.</label>
-                <input type="text" id="date-search"  class="right-align datepicker" name="date-search" placeholder=" Enter your date here" >
+                <input type="text" id="date-search"  class="right-align datepicker white-text" name="date-search" placeholder=" Enter your date here" >
                 <button class="waves-effect waves-light btn grey darken-2" type="submit" id="APOD-Search">Search</button>
             </div>
-            <section class = 'col center-align' id="APOD">
+                                                <!-- Hero Pic -->
+            <section class = 'col' id="APOD">
                 <img class="hero" src="" alt="NASA picture of the day">
                                                   <!-- Collapsible description box -->
-                <ul id="pic-info" class="collapsible col3 offset-s1">
+                <ul id="pic-info" class="collapsible">
                     <li >
-                      <div class="collapsible-header n/a transparent white-text">Picture of the day info!</div>
+                      <div class="collapsible-header n/a transparent white-text">Click here to learn more about the image!</div>
                       <div class="collapsible-body 5"><span id='APOD-Desc'></span></div>
                     </li>
                 </ul>        
