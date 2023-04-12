@@ -7,11 +7,6 @@
  
 }
 
-:root{
-    --primary:#eeeeee;
-    --second:#ff3d00;
-    --third: #fbb117;
-}
 
 
 body{
@@ -31,10 +26,6 @@ body{
   
 }
 
-#APOD-Search{
-    padding:2px;
-    margin:10px;
-}
 
 h1{
     font-family: "belarius-poster", sans-serif;
@@ -43,7 +34,7 @@ h1{
     font-size: 8rem;
     padding-bottom: 10px;
     color:var(--second);
-    background: -webkit-linear-gradient(#ff3d00,#950202bd);
+    background: -webkit-linear-gradient(#ff3c00d9,#950202a3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -71,15 +62,41 @@ h2 {
 margin-left: 3vw;
 }
 
+#asteroidH2{
+text-align: center;
+padding: 30px 0px 10px 0px;
+font-family: "belarius-poster", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 6rem;
+color:var(--second);
+background: -webkit-linear-gradient(#807c8e,#eeeef0bd);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#asteroidSub{
+    color: #eeeef0bd;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+
+
+#asteroid-section{
+    background-color: rgba(0,0,0,.25);
+   
+}
+
 #nasa-search{
-margin-right: 3vw;
+margin-right: 4vw;
 }
 
 
 #APOD-Search {
-  padding: 2px;
+    padding: 2px;
   margin: 20px;
-  box-shadow: 0px 0px 10px -5px #d526bb;
+  box-shadow: 0px 0px 10px -5px #2f2b2e;
   border: 1px solid rgb(0, 0, 0);
   width: 6rem;
 }
@@ -93,6 +110,7 @@ margin-right: 3vw;
   font-size: 2rem;
   line-height: 2rem;
   margin-bottom: 20px;
+  margin-left:3vw;
 }
 
 
@@ -105,7 +123,7 @@ margin-right: 3vw;
     width: 35vw;
     margin-bottom: 20px;
     margin-left: 3vw;
-    box-shadow: 0px 0px 10px -5px;
+    box-shadow: 0px 0px 20px -5px;
 }
 
 #text-area{
@@ -114,6 +132,11 @@ margin-right: 3vw;
     margin-right: 3vw;
    
 }
+
+#asteroidDiv{
+    margin-right: 3vw;
+}
+
 #asteroid-search{
     margin-bottom: 10px;
 }
