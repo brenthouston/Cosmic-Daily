@@ -70,3 +70,9 @@ fetch(asteroidUrl)
       inputImg.firstElementChild.src =imgUrl;
       inputImg.firstElementChild.alt = "Space Image";
     })
+    function randomPhoto(){
+      ranNum = Math.floor(Math.random() * 10)
+      console.log(ranNum)
+      asteroidPhoto.src = 'assets/images/asteroid-'+ranNum+'.png'
+    }
+    randomPhoto()
