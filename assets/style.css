@@ -19,6 +19,8 @@ html {
 body{
     
     background-image: linear-gradient(to top, #c3c6ca, #8e8c9c, #61596c, #383042, #05161b);
+    max-width:100vw;
+    overflow: hidden;
 }
 
 
@@ -49,6 +51,8 @@ h1{
 h2 {
     color:#9b9fb8;
     margin: 0px;
+    font-size: 6rem;
+  
 }
 
 #stats ul {
@@ -193,8 +197,22 @@ button{
     #text-area{
         border: 1px solid grey;
         height: 20rem;
-        width:100vw;
+    
     }
+    h2{
+        font-size: 200%;
+    }
+    /* h1{
+        font-size: 200%;
+    } */
+    #asteroidH2{
+        font-size: 4rem;
+    }
+    #nasa-search{
+        margin-left: 5rem;
+    }
+ 
+ 
 }
 @media screen and (max-width: 992px) {
     #asteroid{
@@ -204,6 +222,19 @@ button{
     #text-area{
         border: 1px solid grey;
         height: 20rem;
-        width:100vw;
+       
     }
+    h2{
+        font-size: 200%;
+    }
+    /* h1{
+        font-size: 200%;
+    } */
+    #asteroidH2{
+        font-size: 4rem;
+    }
+    #nasa-search{
+        margin-left: 5rem;
+    }
+ 
   }
