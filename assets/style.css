@@ -171,43 +171,47 @@ button{
     
 }
 
+<<<<<<< HEAD
+=======
+/* datepicker color*/
+.datepicker-date-display,
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-done,
+.datepicker-table td.is-selected > span,
+.datepicker-table td.is-today > span,
+.datepicker-table td.is-selected > span:hover,
+.datepicker-table td.is-today > span:hover {
+  background-color: rgba(52, 24, 62, 0.806) !important;
+}
+
+/* datepicker text */
+.datepicker-table td.is-selected > span,
+.datepicker-table td.is-today > span {
+  color: white !important;
+}
+/* datepicker button color */
+.datepicker-cancel, .datepicker-done {
+  color: rgb(232, 228, 228) !important;
+}
+>>>>>>> dev
 @media screen and (max-width: 576px) {
     #asteroid{
-        width: 45vw;
+        width: 75vw;
+        justify-content: center;
     }
     #text-area{
         border: 1px solid grey;
-        height: 25rem;
+        height: 15rem;
     }
 }
 @media screen and (max-width: 992px) {
     #asteroid{
-        width: 45vw;
+        width: 75vw;
+        justify-content: center;
     }
     #text-area{
         border: 1px solid grey;
-        height: 25rem;
+        height: 15rem;
     }
   }
-
-    /* datepicker color*/
-    .datepicker-date-display,
-    .datepicker-cancel,
-    .datepicker-clear,
-    .datepicker-done,
-    .datepicker-table td.is-selected > span,
-    .datepicker-table td.is-today > span,
-    .datepicker-table td.is-selected > span:hover,
-    .datepicker-table td.is-today > span:hover {
-      background-color: rgba(52, 24, 62, 0.806) !important;
-    }
-    
-    /* datepicker text */
-    .datepicker-table td.is-selected > span,
-    .datepicker-table td.is-today > span {
-      color: white !important;
-    }
-    /* datepicker button color */
-    .datepicker-cancel, .datepicker-done {
-        color: rgb(232, 228, 228) !important;
-      }
