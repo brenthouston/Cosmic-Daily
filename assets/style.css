@@ -4,6 +4,7 @@
   margin-block-start:0;
   margin-block-end:0;
   padding-inline-start:0;
+  
  
 }
 
@@ -51,7 +52,7 @@ h2 {
 }
 
 #stats ul {
-  margin: 20px;
+  
   line-height: 2rem;
 }
 
@@ -88,51 +89,53 @@ background: -webkit-linear-gradient(#807c8e,#eeeef0bd);
 }
 
 #statistics{
-    margin: 30px;
+    margin: 5px 0px 0px 50px;
     line-height: 2.25rem;
+}
+
+button{
+    margin-top: 5px;
+    box-shadow: 0px 0px 10px -5px #2f2b2e;
+    border: none;
+   
 }
 
 
 #asteroid-section{
     background-color: rgba(0,0,0,.25);
-   
+    
 }
 
 #nasa-search{
-margin-right: 5vw;
+    margin-right: 5vw;
 }
 
 
 #APOD-Search {
     padding: 2px;
-  margin: 20px;
-  box-shadow: 0px 0px 10px -5px #2f2b2e;
-  border: 1px solid rgb(0, 0, 0);
-  width: 6rem;
+    margin: 20px;
+    box-shadow: 0px 0px 10px -5px #2f2b2e;
+    border: 1px solid rgb(0, 0, 0);
+    width: 6rem;
 }
 
 #pic-info{
     position: relative;
     left: 10.5vw;
     font-size: 20px;
-   
+    
 }
 #asteroid-name {
-  color:rgb(0, 0, 0);
-  font-size: 2rem;
-  line-height: 2rem;
-  margin-bottom: 20px;
-  margin-left:3vw;
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    width:100%;
+    background-color: #e3e6e710;
+    line-height: 3rem;
 }
 
-
-#text-area {
-  border: 1px solid rgb(215, 210, 210);
-  height: 16rem;
-  box-shadow: 0px 0px 10px -5px;
-}
 #asteroid{
     width: 35vw;
+    margin-top: 17px;
     margin-bottom: 20px;
     margin-left: 3vw;
     box-shadow: 0px 0px 20px -5px;
@@ -141,8 +144,10 @@ margin-right: 5vw;
 #text-area{
     border: 1px solid grey;
     height: 16rem;
+    box-shadow: 0px 0px 10px -5px;
+    margin: 13px 0px 0px 0px;
     margin-right: 4vw;
-   
+    
 }
 
 #asteroidDiv{
@@ -155,13 +160,19 @@ margin-right: 5vw;
     box-shadow: 0px 0px 10px -5px #2f2b2e;
     border: 1px solid rgb(0, 0, 0);
     width:5rem;
-
+    
 }
 
-#asteroid-search{
-    margin-bottom: 10px;
+#prev,
+#next{
+    margin-right: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px -5px #2f2b2e;
+    
 }
 
+<<<<<<< HEAD
+=======
 /* datepicker color*/
 .datepicker-date-display,
 .datepicker-cancel,
@@ -183,6 +194,7 @@ margin-right: 5vw;
 .datepicker-cancel, .datepicker-done {
   color: rgb(232, 228, 228) !important;
 }
+>>>>>>> dev
 @media screen and (max-width: 576px) {
     #asteroid{
         width: 75vw;
@@ -192,8 +204,8 @@ margin-right: 5vw;
         border: 1px solid grey;
         height: 15rem;
     }
-  }
-  @media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 992px) {
     #asteroid{
         width: 75vw;
         justify-content: center;
