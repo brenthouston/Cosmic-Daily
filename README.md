@@ -23,7 +23,11 @@ Project is created with:
 * dayjs
 * Adobe Fonts
 * Photoshop
+<<<<<<< HEAD
+* Materialize framework
+=======
 * Materialize Framework
+>>>>>>> dev
 
 
 
@@ -43,4 +47,4 @@ Loaded on mobile viewport
 ![Mobile viewport]()
 
 Loaded on desktop viewport
-![Desktop viewport]()
+![Desktop viewport](https://github.com/Ian-Danas/Cosmic-Daily/blob/dev/assets/images/CosmicDailyScreenShot.png)
