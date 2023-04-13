@@ -5,6 +5,7 @@
 * [Links](#links)
 * [Technologies](#technologies)
 * [Resources](#resources)
+* [Links to Asteroid Photos](#resources)
 * [Deployed App Screenshots](#resources)
 
 ## General info
@@ -33,9 +34,12 @@ Project is created with:
 	
 ## Resources
 - [Excalidraw](https://excalidraw.com)
+- [Materialize](https://materializecss.com/)
 - [Stack Overflow](https://stackoverflow.com)
 - [Adobe Fonts](https://fonts.adobe.com/fonts)
-- [NASA](https://api.nasa.gov/)
+- [NASA API](https://api.nasa.gov/)
+
+## Links to asteroid images
 - [Spaceplace](https://spaceplace.nasa.gov/asteroid/en/)
 - [USA Today](https://www.usatoday.com/story/news/nation/2023/03/21/asteroid-2023-dz-2-earth-moon/11514487002/)
 - [NASA](https://solarsystem.nasa.gov/resources/all/?order=pub_date+desc&per_page=50&page=0&search=&condition_1=1%3Ais_in_resource_list&fs=&fc=&ft=asteroids&dp=&category=)
