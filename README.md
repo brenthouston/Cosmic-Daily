@@ -1,6 +1,5 @@
 # Cosmic Daily
 
-
 ## Table of contents
 * [General info](#general-info)
 * [Links](#links)
@@ -16,7 +15,7 @@ Project is created with:
 * Excalidraw
 
                 We used Excalidraw to create the wireframe.
-![Wireframe]()
+![Wireframe](https://github.com/Ian-Danas/Cosmic-Daily/blob/dev/assets/images/WireFrame.png)
 
 * HTML
 * CSS
@@ -24,12 +23,16 @@ Project is created with:
 * dayjs
 * Adobe Fonts
 * Photoshop
+<<<<<<< HEAD
 * Materialize framework
+=======
+* Materialize Framework
+>>>>>>> dev
 
 
 
 ## Links
-- [Link to deployed site]()
+- [Link to deployed site](https://ian-danas.github.io/Cosmic-Daily/)
 
 	
 ## Resources
