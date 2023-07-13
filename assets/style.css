@@ -48,7 +48,7 @@ h1{
     font-size: 8rem;
     padding-bottom: 10px;
     color:var(--second);
-    background: -webkit-linear-gradient(#ff3c00d9,#950202a3);
+    background: -webkit-linear-gradient(#ff9500,#db0202);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
