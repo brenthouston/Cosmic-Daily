@@ -22,7 +22,8 @@ html {
 
 body{
     
-    background-image: linear-gradient(to top, #c5c5c5, #aaa8b3, #a39bac, #857a93, #3d5c67);
+    /* background-image: linear-gradient(to top, #c5c5c5, #aaa8b3, #a39bac, #857a93, #3d5c67); */
+    background: black;
     max-width:100vw;
     overflow: hidden;
 }
