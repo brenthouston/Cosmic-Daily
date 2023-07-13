@@ -8,7 +8,11 @@
  
 }
 
-
+label{
+    font-size: 1.5rem;
+    color: black;
+    
+}
 
 html {
     overflow-y: overlay;
@@ -18,7 +22,7 @@ html {
 
 body{
     
-    background-image: linear-gradient(to top, #c3c6ca, #8e8c9c, #61596c, #383042, #05161b);
+    background-image: linear-gradient(to top, #eff1f6, #d4d2dd, #a39bac, #857a93, #3d5c67);
     max-width:100vw;
     overflow: hidden;
 }
@@ -63,8 +67,8 @@ h2 {
 .hero{
     margin-left: 3vw;
     margin-right: 3vw;
-    min-width: 91.5vw;
-    max-width: 91.5vw;
+    min-width: 80.5vw;
+    max-width: 80.5vw;
     height: auto;
     box-shadow: 0px 0px 15px -5px;
    }
@@ -95,6 +99,7 @@ background: -webkit-linear-gradient(#807c8e,#eeeef0bd);
 #statistics{
     margin: 5px 0px 0px 50px;
     line-height: 2.25rem;
+    font-size: 1.25rem;
 }
 
 button{
