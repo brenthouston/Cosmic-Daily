@@ -3,6 +3,10 @@ font-family: "indivisible", sans-serif;
 font-weight: 400;
 font-style: normal; 
 
+font-family: "forma-djr-display", sans-serif;
+font-weight: 600;
+font-style: normal;
+
 light
 font-family: "indivisible", sans-serif;
 font-weight: 300;
@@ -45,11 +49,13 @@ header h1 {
   display: flex;
   justify-content: center;
   top: 47px;
-  font-family: "indivisible", sans-serif;
-  font-weight: 600;
+  font-family: "brother-1816", sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-size: 61px;
-  line-height: 72px;
+  font-size: 72px;
+  line-height: 40px;
+
+  
   /* identical to box height */
   margin: 43px;
 
@@ -76,21 +82,22 @@ h2 {
 p {
   /* Explore the Universe one day at a time and travel back in time to view past images. With our NASA Picture of the Day, enjoy today’s pic below or select a date to see the image for that date. */
 
+  
 
-  left: 13.43%;
-  right: 43.92%;
-  top: 16.09%;
-  bottom: 72.61%;
 
   /* Body */
   font-family: "indivisible", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 21px;
-  line-height: 38px;
+  line-height: 30px;
   letter-spacing: -0.02em;
 
   color: #ffffff;
+}
+
+.explore-search {
+    margin-top: 49px;
 }
 
 .explore-discover {
@@ -103,7 +110,7 @@ p {
 }
 
 .hero {
-    margin-top: 3%;
+    margin-top: 15px;
   min-width: 70.5vw;
   max-width: 70.5vw;
   box-shadow: 0px 0px 15px -5px;
@@ -155,11 +162,11 @@ font-style: normal;
 
 
 /* ENTER YOUR DATE HERE */
-.datepick{
+input.datepick.datepicker{
     margin-top: 15px;
     padding: 24px;
     width: 290px;
-    height: 35px;
+    height: 16px !important;
     left: 32px;
     top: 14px;
     
@@ -189,7 +196,6 @@ border-radius: 6px;
 background-color: #545454;
   border: 1px solid #545454;
   width: 89px;
-  height: 29px;
   color:antiquewhite
 }
 
