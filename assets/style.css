@@ -1,178 +1,239 @@
+/* regular
+font-family: "indivisible", sans-serif;
+font-weight: 400;
+font-style: normal; 
+
+light
+font-family: "indivisible", sans-serif;
+font-weight: 300;
+font-style: normal;*/
+
 * {
-  /* margin: 0;
-  padding: 0; */
-  margin-block-start:0;
-  margin-block-end:0;
-  padding-inline-start:0;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+
+body {
+  display: flex;
+  background: #252424;
+  max-width: 100vw;
   
- 
-}
-
-label{
-    font-size: 1.5rem;
-    color: black;
-    
-}
-
-html {
-    overflow-y: overlay;
 }
 
 
 
-body{
-    
-    /* background-image: linear-gradient(to top, #c5c5c5, #aaa8b3, #a39bac, #857a93, #3d5c67); */
-    background: black;
-    max-width:100vw;
-    overflow: hidden;
+main {
+  display: flex;
+  flex-direction: column;
 }
 
-
-#APOD{
-    max-width: 100vw;
+#APOD {
+  max-width: 100vw;
 }
 
-#APOD ul{
-
+#APOD ul {
   width: 70vw;
   margin: 30px 30px 30px 30px;
-  
 }
 
+header h1 {
+  /* Cosmic Daily */
+  display: flex;
+  justify-content: center;
+  top: 47px;
+  font-family: "indivisible", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 61px;
+  line-height: 72px;
+  /* identical to box height */
+  margin: 43px;
 
-h1{
-    font-family: "belarius-poster", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 8rem;
-    padding-bottom: 10px;
-    color:var(--second);
-    background: -webkit-linear-gradient(#ff9500,#db0202);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+  color: #ffffff;
+}
+
+strong {
+  font-family: "indivisible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  color: #ffffff;
 }
 
 h2 {
-    color:#9b9fb8;
-    margin: 0px;
-    font-size: 6rem;
-  
+  color: #ffffff;
+  font-family: "indivisible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+}
+
+p {
+  /* Explore the Universe one day at a time and travel back in time to view past images. With our NASA Picture of the Day, enjoy today’s pic below or select a date to see the image for that date. */
+
+
+  left: 13.43%;
+  right: 43.92%;
+  top: 16.09%;
+  bottom: 72.61%;
+
+  /* Body */
+  font-family: "indivisible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+.explore-discover {
+    display: flex;
+    flex-direction: row;
 }
 
 #stats ul {
-  
   line-height: 2rem;
 }
 
-.hero{
-    margin-left: 3vw;
-    margin-right: 3vw;
-    min-width: 80.5vw;
-    max-width: 80.5vw;
-    height: auto;
-    box-shadow: 0px 0px 15px -5px;
-   }
-
-.colapsible-header{
-margin-left: 3vw;
+.hero {
+  margin-top: 16.6%;
+  min-width: 70.5vw;
+  max-width: 70.5vw;
+  box-shadow: 0px 0px 15px -5px;
 }
 
-#asteroidH2{
-text-align: center;
-padding: 30px 0px 10px 0px;
-font-family: "belarius-poster", sans-serif;
-font-weight: 700;
+.colapsible-header {
+  margin-left: 3vw;
+}
+
+#asteroidH2 {
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+  font-family: "belarius-poster", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6rem;
+  color: var(--second);
+  background: -webkit-linear-gradient(#807c8e, #eeeef0bd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#asteroidSub {
+  color: #eeeef0bd;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+#statistics {
+  margin: 5px 0px 0px 50px;
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+}
+
+button {
+    font-family: "indivisible", sans-serif;
+font-weight: 300;
 font-style: normal;
-font-size: 6rem;
-color:var(--second);
-background: -webkit-linear-gradient(#807c8e,#eeeef0bd);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  margin-top: 5px;
+
+  border: none;
 }
 
-#asteroidSub{
-    color: #eeeef0bd;
-    text-align: center;
-    padding-bottom: 4rem;
-}
-
-#statistics{
-    margin: 5px 0px 0px 50px;
-    line-height: 2.25rem;
-    font-size: 1.25rem;
-}
-
-button{
-    margin-top: 5px;
-    box-shadow: 0px 0px 10px -5px #2f2b2e;
-    border: none;
-   
+#asteroid-section {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 
-#asteroid-section{
-    background-color: rgba(0,0,0,.25);
+
+
+/* ENTER YOUR DATE HERE */
+.datepick{
+    margin-top: 15px;
+    padding: 24px;
+    width: 290px;
+    height: 35px;
+    left: 32px;
+    top: 14px;
     
+    background: #B5B0B0;
+    border-radius: 30px;
+}
+.nasa-search{
+    display: flex;
 }
 
-#nasa-search{
-    margin-right: 5vw;
-}
+input {
 
+font-family: "indivisible", sans-serif;
+font-weight: 300;
+font-style: normal;
+line-height: 16px;
+letter-spacing: -0.02em;
+color: #615D5D;
+border-radius: 6px;
+
+}
 
 #APOD-Search {
-    padding: 2px;
-    margin: 20px;
-    box-shadow: 0px 0px 10px -5px #2f2b2e;
-    border: 1px solid rgb(0, 0, 0);
-    width: 6rem;
+
+  padding: 2px;
+  margin: 20px;
+background-color: #545454;
+  border: 1px solid #545454;
+  width: 89px;
+  height: 29px;
+  color:antiquewhite
 }
 
-#pic-info{
-    position: relative;
-    left: 10.5vw;
-    font-size: 20px;
-    
+#pic-info {
+  position: relative;
+  left: 10.5vw;
+  font-size: 20px;
 }
 #asteroid-name {
-    color:rgb(0, 0, 0);
-    font-size: 2rem;
-    width:100%;
-    background-color: #e3e6e710;
-    line-height: 3rem;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  width: 100%;
+  background-color: #e3e6e710;
+  line-height: 3rem;
 }
 
-#asteroid{
-    width: 35vw;
-    margin-top: 17px;
-    margin-bottom: 20px;
-    margin-left: 3vw;
-    box-shadow: 0px 0px 20px -5px;
+#asteroid {
+  width: 35vw;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  margin-left: 3vw;
+  box-shadow: 0px 0px 20px -5px;
 }
 
-#text-area{
-    border: 1px solid grey;
-    height: 16rem;
-    box-shadow: 0px 0px 10px -5px;
-    margin: 13px 0px 0px 0px;
-    margin-right: 4vw;
-    
+#text-area {
+  border: 1px solid grey;
+  height: 16rem;
+  box-shadow: 0px 0px 10px -5px;
+  margin: 13px 0px 0px 0px;
+  margin-right: 4vw;
 }
 
-#asteroidDiv{
-    margin-right: 4vw;
+#asteroidDiv {
+  margin-right: 4vw;
 }
 
-#next,#prev{
-    padding: 2px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 10px -5px #2f2b2e;
-    width:5rem;
-    margin-bottom: 30px;
-    
+#next,
+#prev {
+  padding: 2px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px -5px #2f2b2e;
+  width: 5rem;
+  margin-bottom: 30px;
 }
-
 
 /* datepicker color*/
 .datepicker-date-display,
@@ -192,55 +253,51 @@ button{
   color: white !important;
 }
 /* datepicker button color */
-.datepicker-cancel, .datepicker-done {
+.datepicker-cancel,
+.datepicker-done {
   color: rgb(232, 228, 228) !important;
 }
 @media screen and (max-width: 576px) {
-    #asteroid{
-        width: 75vw;
-        justify-content: center;
-    }
-    #text-area{
-        border: 1px solid grey;
-        height: 20rem;
-    
-    }
-    h2{
-        font-size: 200%;
-    }
-    /* h1{
+  #asteroid {
+    width: 75vw;
+    justify-content: center;
+  }
+  #text-area {
+    border: 1px solid grey;
+    height: 20rem;
+  }
+  h2 {
+    font-size: 200%;
+  }
+  /* h1{
         font-size: 200%;
     } */
-    #asteroidH2{
-        font-size: 4rem;
-    }
-    #nasa-search{
-        margin-left: 5rem;
-    }
- 
- 
+  #asteroidH2 {
+    font-size: 4rem;
+  }
+  #nasa-search {
+    margin-left: 5rem;
+  }
 }
 @media screen and (max-width: 992px) {
-    #asteroid{
-        width: 75vw;
-        justify-content: center;
-    }
-    #text-area{
-        border: 1px solid grey;
-        height: 20rem;
-       
-    }
-    h2{
-        font-size: 200%;
-    }
-    /* h1{
+  #asteroid {
+    width: 75vw;
+    justify-content: center;
+  }
+  #text-area {
+    border: 1px solid grey;
+    height: 20rem;
+  }
+  h2 {
+    font-size: 200%;
+  }
+  /* h1{
         font-size: 200%;
     } */
-    #asteroidH2{
-        font-size: 4rem;
-    }
-    #nasa-search{
-        margin-left: 5rem;
-    }
- 
+  #asteroidH2 {
+    font-size: 4rem;
   }
+  #nasa-search {
+    margin-left: 5rem;
+  }
+}
