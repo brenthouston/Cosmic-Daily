@@ -267,7 +267,8 @@ background-color: #545454;
 }
 
 #asteroid {
-  width: 35vw;
+    width: 35vw;
+max-width: 650px;
   margin-top: 17px;
   margin-bottom: 20px;
 
@@ -275,6 +276,7 @@ background-color: #545454;
 }
 
 #text-area {
+    position: relative;
   border: 1px solid grey;
   border-radius: 9px;
   margin: 13px 0px 0px 0px;
@@ -284,7 +286,6 @@ background-color: #545454;
 button#Asteroid-Search{
     width:89px;
 }
-
 
 
 #asteroid-date-search{
@@ -325,7 +326,7 @@ p#asteroid-choose{
 .datepicker-table td.is-today > span,
 .datepicker-table td.is-selected > span:hover,
 .datepicker-table td.is-today > span:hover {
-  background-color: rgba(52, 24, 62, 0.806) !important;
+   background-color: rgba(187, 183, 188, 0.806) !important; 
 }
 
 /* datepicker text */
@@ -336,7 +337,7 @@ p#asteroid-choose{
 /* datepicker button color */
 .datepicker-cancel,
 .datepicker-done {
-  color: rgb(232, 228, 228) !important;
+  color: rgb(38, 37, 37) !important;
 }
 @media screen and (max-width: 576px) {
   #asteroid {
