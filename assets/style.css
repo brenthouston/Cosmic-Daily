@@ -78,15 +78,6 @@ h2 {
   font-size: 35px;
 }
 
-h2#asteroidH2{
-    
-        color: #ffffff;
-        font-family: "indivisible", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 35px;
-      
-}
 
 p {
   /* Explore the Universe one day at a time and travel back in time to view past images. With our NASA Picture of the Day, enjoy today’s pic below or select a date to see the image for that date. */
@@ -99,7 +90,7 @@ p {
   font-family: "indivisible", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.2em;
   letter-spacing: -0.02em;
 
@@ -159,6 +150,16 @@ li{
   background: -webkit-linear-gradient(#807c8e, #eeeef0bd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h2#asteroidH2{
+    
+    color: #ffffff;
+    font-family: "indivisible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+  
 }
 
 #asteroidSub {
