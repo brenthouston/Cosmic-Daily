@@ -205,8 +205,8 @@ font-style: normal;
     display: flex;
     flex-direction: column;
   align-items: end;
-   width: 550px;
-   
+   max-width: 550px;
+   min-width:528px
 }
 
 
@@ -351,9 +351,10 @@ p#asteroid-choose{
   h2 {
     font-size: 200%;
   }
-  /* h1{
-        font-size: 200%;
-    } */
+ #asteroidDiv{
+    width: 75vw;
+  
+ }
   #asteroidH2 {
     font-size: 4rem;
   }
@@ -361,11 +362,16 @@ p#asteroid-choose{
     margin-left: 5rem;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 972px) {
   #asteroid {
     width: 75vw;
     justify-content: center;
   }
+  #asteroidDiv {
+    width: 75vw;
+   
+  }
+
   #text-area {
     border: 1px solid grey;
     height: 20rem;
