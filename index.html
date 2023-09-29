@@ -21,7 +21,7 @@
       </header>
          <section class="row explore-search">
           <!-- Explore Universe -->
-            <article class="col-8 px-5">
+            <article class="col-8">
                 <p><strong>Explore the Universe </strong> one day at a time and travel back in time to view past images. With our NASA Picture of the Day, enjoy today’s pic below or select a date to see the image for that date. </p>
             </article>
      
@@ -54,15 +54,16 @@
           src="assets/images/asteroid-9.png"
           alt="pic of asteroid"
           />
+          <!-- Asteroid Search -->
+           <div id = 'asteroid-search' class = 'text-right col l6 s6'>
+      <div id="asteroidDiv">
+        <p id="asteroid-choose">Choose a date to see asteroids that are closest to Earth</p>
+        <input type="text" id="asteroid-date-search"  class="datepicker" name="asteroid-date-search" placeholder=" ENTER YOUR DATE HERE" >
+        <button class="waves-effect waves-light btn grey darken-2" type="submit" id="Asteroid-Search">Search</button>
+      </div>
         </div>
-        <!-- Asteroid Search -->
-        <div id = 'asteroid-search' class = 'col l6 s6'>
-          <div id="asteroidDiv">
-            <label for="">Choose a date to see asteroid that are closest to Earth</label>
-            <input type="text" id="asteroid-date-search"  class="datepicker" name="asteroid-date-search" placeholder=" Enter your date here" >
-            <button class="waves-effect waves-light btn grey darken-2" type="submit" id="Asteroid-Search">Search</button>
-          </div>
         </div>
+
         <!-- Asteroid STATS -->
         <div id="asteroid-layout-rightside" class="col l6 s12 white-text">
           <div id="text-area">
@@ -77,9 +78,13 @@
           </div>
           <button  id = 'prev' class="waves-effect waves-light btn grey darken-2">Prev</button>
           <button id = 'next'class="waves-effect waves-light btn grey darken-2">Next</button>
-        </div>
+          
+          
+          
         </div>
       </article>
+    </div>
+       
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
