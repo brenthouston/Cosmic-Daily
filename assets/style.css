@@ -131,7 +131,8 @@ li{
 
 .hero {
     margin-top: 18px;
-
+width: 1297.5px;
+background-size: cover;
  max-width: 100%;
  border-radius: 4px;
 
@@ -340,7 +341,11 @@ p#asteroid-choose{
   color: rgb(38, 37, 37) !important;
 }
 @media screen and (max-width: 576px) {
-  #asteroid {
+  .hero{
+    width: 75vw;
+  }
+  
+    #asteroid {
     width: 75vw;
     justify-content: center;
   }
@@ -363,6 +368,9 @@ p#asteroid-choose{
   }
 }
 @media screen and (max-width: 972px) {
+    .hero{
+        width: 75vw;
+      }
   #asteroid {
     width: 75vw;
     justify-content: center;
