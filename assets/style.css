@@ -36,7 +36,10 @@ main {
 }
 
 #APOD {
+  flex-direction: column;
   max-width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -341,8 +344,21 @@ p#asteroid-choose{
   color: rgb(38, 37, 37) !important;
 }
 @media screen and (max-width: 576px) {
-  .hero{
-    width: 75vw;
+  img.hero{
+    width: 100vw;
+  }
+section.row.explore-search{
+  display: flex;
+  align-items: center;
+}
+div#nasa-search.col-4{
+  display: flex !important;
+  align-items: center;
+}
+  main{
+    display: flex;
+
+    align-items: center;
   }
   
     #asteroid {
