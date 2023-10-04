@@ -51,10 +51,10 @@ header h1 {
   font-family: "brother-1816", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 59px;
-  line-height: 70px;
+  font-size: 68px;
+  line-height: 90px;
   letter-spacing: .01em;
-  background: -webkit-linear-gradient(#709bf8d9,#0b4ec1e9);
+  background: -webkit-linear-gradient(#c1d4fd,#4e85e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
